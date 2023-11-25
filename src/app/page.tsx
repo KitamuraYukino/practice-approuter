@@ -1,6 +1,40 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+// page.tsxがメインのページ
+'use client'
 
+
+//import Image from 'next/image'
+//import styles from './page.module.css'
+
+//import { Metadata } from 'next'
+
+//import Link from 'next/link'
+
+import { useRouter } from 'next/navigation'
+
+// export const metadata: Metadata = {
+  // title: 'Next.js',
+// }
+
+export default function Page(){
+  //return <h1>Hello, Next.js!</h1>
+
+  //dashboardに飛ぶリンク
+  //return <Link href="/dashboard">Dashboard</Link>
+
+  //なにこれ
+  const router = useRouter()
+
+  return (
+    <button type='button' onClick={() => router.push('/dashboard')}>
+      Dashboard
+    </button>
+  )
+}
+
+
+
+
+/*
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -93,3 +127,4 @@ export default function Home() {
     </main>
   )
 }
+*/
