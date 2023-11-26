@@ -1,5 +1,5 @@
 import { Suspense } from "react"
-import{ PostFeed, Wether } from './Components'
+// import{ PostFeed, Wether } from './Components'
 
 
 export default function Posts() {
@@ -8,10 +8,10 @@ export default function Posts() {
   return (
     <section>
       <Suspense fallback={<p>Loading feed...</p>}>
-      <PostFeed />
+      {/* <PostFeed /> */}
       </Suspense>
       <Suspense fallback={<p>Loading Wether...</p>}>
-        <Wether />
+        {/* <Wether /> */}
       </Suspense>
     </section>
   )
